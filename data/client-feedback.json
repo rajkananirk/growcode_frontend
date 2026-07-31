@@ -1,0 +1,20 @@
+[
+  {
+    "theme": "Fewer handoffs",
+    "text": "Product decisions and engineering trade-offs stay in the same conversation, reducing rework between strategy, design, and delivery.",
+    "role": "Product leadership",
+    "context": "Healthcare operations"
+  },
+  {
+    "theme": "Progress you can inspect",
+    "text": "Weekly working demos make delivery tangible. Risks surface early and stakeholders know exactly what is moving next.",
+    "role": "Operations leadership",
+    "context": "Logistics platform"
+  },
+  {
+    "theme": "Ownership that lasts",
+    "text": "Code, environments, and operating knowledge remain transferable from day one, so handover is part of delivery rather than an afterthought.",
+    "role": "Technology leadership",
+    "context": "Financial services"
+  }
+]
