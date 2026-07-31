@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; background: #080c13; }
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #080c13;
+  font-family: "Helvetica Neue", Helvetica, Arial, ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+html { scroll-behavior: smooth; }
+::selection { background: rgb(59 130 246 / 35%); color: white; }
+.section-label { @apply font-mono text-xs font-semibold uppercase tracking-[0.18em] text-brand-400; }
+.section-title { @apply mt-5 font-display text-4xl font-semibold leading-[1.02] tracking-[-0.05em] text-white sm:text-6xl; }
+.field { @apply block; }
+.field > span { @apply mb-2.5 block text-xs font-semibold uppercase tracking-[0.13em] text-slate-400; }
+.field input, .field select, .field textarea { @apply w-full rounded-xl border border-white/[0.09] bg-slate-950/60 px-4 py-3.5 text-sm text-slate-200 outline-none transition placeholder:text-slate-700 focus:border-brand-500 focus:ring-4 focus:ring-brand-500/10; }
+.field select { @apply appearance-none; }
+.field textarea { @apply resize-y leading-6; }
+nav.sticky { top: 72px; }
+.glow-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0;
+  background: radial-gradient(420px circle at var(--glow-x, 50%) var(--glow-y, 50%), rgb(59 130 246 / 18%), transparent 45%);
+  transition: opacity 300ms ease;
+}
+.glow-card:hover::before { opacity: 1; }
